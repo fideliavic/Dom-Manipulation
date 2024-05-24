@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+                
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='../views/sec.html'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../views/sec.html'>
+    <script sript src="https://kit.fontawesome.com/fda2e50813.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+     <div class="butts" id="butts">
+          <div class="thre-butts">
+               <input class="boxie1" type="button">
+               <input class="boxie2" type="button">
+               <input class="boxie3" type="button"> 
+          </div>
+     </div>
+    
+
+     <div class="dash-roles" >
+        <div class="sidebar" id="side-bar">
+
+          <div class="logo-section" id="logo-sec">
+               <div class="logo">
+                    <img src="../images/logo.png" alt="logo">
+               </div>
+               
+               <div class="arten">
+                    <p class="aa">A</p>
+                    <p class="bb">e</p>
+                    <p class="cc">r</p>
+                    <p class="dd">t</p>
+                    <p class="ee">e</p>
+                    <p class="ff">n</p>
+               </div>
+          </div>
+          
+          <ul id="list-items">
+               <div class="dash">
+                    <div class="dash-image">
+                         <img src="../images/dashboard image.png" alt="logo">
+                    </div>
+                    <div class="dash-link">
+                         <li><a href="#" class="employ-link" onclick="showEmployees()">Dashboard</a></li>
+                    </div>
+               </div>
+             
+               <div class="rolees">
+                     <li>
+                         <a href="../views/dashboard three.html" onclick="showImage()"><img src="../images/roles image.png" alt="logo" id="employee-image"></a>
+                     
+                         <ul class="sub-links">
+                              <li><a  class="roles-link" href="../views/dashboard three.html"></a></li>
+                          </ul>
+                    
+                    </li>   
+                                 
+                     <li><a href="#" class="rolon"  onclick="showRoles()">Roles</a></li>
+
+               </div>
+           
+               <!-- method one -->
+              <div class="employees">
+
+                     <img src="../images/3 User.svg" alt="logo">
+                    
+                     <li class="them">
+                         <a class="EMPLOYyyY" href="#">Employees</a>  
+                         <ul class="sub-links">
+                             <li><a class="all-empoly" href="#">All Employees</a></li>
+                             <li><a class="recent-hire" href="#">Recent hires</a></li>
+                         </ul>
+                     </li> 
+
+                     <img src="../images/DOWNARROW.svg" alt="logo">
+               </div>
+
+               <div class="pay-roles">
+                    
+                    <div class="pay-image">
+                         <img src="../images/payroll-image.png" alt="logo">  
+                    </div>
+                    
+                    <div class="pay-link">
+                         <li><a href="#">Payroll</a></li>
+                    </div>
+               </div>
+             
+               <div class="report">
+                     <img src="../images/Settings_Future.png" alt="logo">
+                     <li><a class="set-link" href="#">Settings</a></li>
+               </div>
+            
+          </ul>
+
+          <div class="logout-line" id="log"></div>
+          
+          
+      </div>
+     
+
+          <div id="employees-content" style="padding-left: 10px;">
+        
+              <div class="search-section">
+                    <div class="sec1">
+                        <div class="imgg-searchh1">
+                  
+                              <div class="imgggg1">
+                                    <img class="img-112" src="../images/Search.svg" alt="img">    
+                              </div>
+                              
+                              <div class="searchh1">
+                                   <textarea rows="3" placeholder=" Search anything here"></textarea>
+                              </div>
+               
+                         </div>  
+
+                    </div>
+               
+                    <div class="sec2">
+                          <img src="../images/settings-search.png" alt="logo" style="padding-left: 400px;">
+                          <img src="../images/bell-search icon.png" alt="logo">
+                          <img src="../images/active profile pics.png" alt="logo">
+                    </div>
+               </div> 
+
+               <div class="line4"></div>
+
+
+          
+              <div class="employee-section">
+                   <div class="employee-sec1">
+                      <div class="emp">
+                         <h2 class="employ">Employee</h2>
+                      </div>
+                      <div class="help">
+                         <img src="../images/Help icon.svg" alt="logo">
+                      </div>
+                         <div class="hundreds">
+                              <h4>100</h4 > 
+                         </div>
+                    </div>
+                    
+                       
+                  
+                   <div class="employee-sec2">
+                       <img src="../images/Downlaod.svg" alt="logo" style="padding-left: 450px;">
+                       <p>Export</p>
+                    </div>
+                   
+
+                   <div class="employee-sec3" >
+                         <img src="../images/newrole-dotted circle.svg" alt="logo"> 
+                       <h3>New Employee</h3>
+                   </div>
+             </div>
+          
+            <div class="all-employee">
+
+              <div class="all-employeeT">
+                 <p class="allL">All Employee</p>
+                 <p class="teamM">Teams</p>
+                 <p class="rollL">Roles</p>
+
+              </div>
+
+            </div>
+
+             <div class="line"></div> <br><br><br>
+               <div class="search-general">
+                    <div class="search-by-name">
+                         
+
+                         <div class="imgg-searchh">
+                  
+                              <div class="imgggg">
+                                    <img class="img-11" src="../images/Search.svg" alt="img">    
+                              </div>
+                              
+                              <div class="searchh">
+                                   <textarea rows="3" placeholder=" Search Employee by name, role, ID or any related keywords"></textarea>
+                              </div>
+               
+                         </div>
+
+
+                      <div class="every">
+                         <div class="filter-img">
+                               <img class="fil-img" src="../images/Filters lines.svg" alt="img" >
+                               <p class="filter">Filter</p style="padding-left: 200px;">
+                         </div>
+
+                         <div class="three-line">
+                              <img class="thre" src="../images/three-lines.svg" alt="img">
+                         </div>
+
+                         <div class="boxs">
+                           <img class="thre" src="../images/four-boxs.svg" alt="img">
+                         </div>
+                      </div>
+                    </div>
+          
+               </div>
+
+          
+           <div class="employess-details">
+               
+               <div class="check">
+                    <input type="checkbox"><br>
+                    <p class="namee">Name</p>
+               </div>
+               
+               <div class="employee-id">
+                    <p class="employyy">Empolyee ID</p>
+               </div>
+               
+               <div class="role-question">
+                    <p class="Role-up">Role</p>
+                    <img class="thre" src="../images/Question icon.png" alt="img">
+               </div>
+               
+               <div class="stat">
+                    <p class="status-bar">Status</p>
+               </div>
+               
+               <div class="team">
+                    <p class="temss">Teams</p>
+               </div> 
+          </div>
+
+          <div class="tanner-wrapper1">
+
+              <div class="tan-name1">
+                    <div class="check-box1">
+                          <input type="checkbox">
+                    </div>
+
+                    <div class="tan-img1">
+                          <img class="tani-img1" src="../images/Avatar.svg" alt="img">
+                    </div>
+
+                   <div class="tanner-mail1">
+                         <p class="tann1">Tanner Finsha</p>
+                         <p class="maill1">@Tannerfisher@gmail.com</p>
+                   </div>
+              </div>
+
+
+
+               <div class="tanner-id1">
+                    <div class="text1">
+                        <p class="tan-id1" >#23454GH6J7YT6</p>
+                    </div>
+               </div>
+
+               <div class="tanprod-id1">
+                    <p class="tanprod1">Product Designer</p>
+                    
+                    <p class="full1">Full time</p>
+               </div>
+
+               <div class="dot-active1">
+                    <div class="do-act1">
+                       <img class="dot1" src="../images/Dot.svg" alt="img">
+                       <p class="act1">Active</p> 
+                    </div>
+               </div>
+
+               <div class="mark-desgn1">
+                    <div class="market1" >
+                         <p class="mark1">Marketing</p>
+                    </div>
+
+                    <div class="design1">
+                         <p class="de">Design</p>
+                    </div>
+
+                    <div class="one1">
+                         <p class="on1">+1</p>
+                    </div>
+
+
+                    <div class="threee-dots">
+                         <img class="tani-img4" src="../images/Invincibles.svg" alt="img">
+                    
+                    </div>    
+               </div>
+          </div>
+
+          <!-- second line -->
+
+          <div class="tanner-wrapper1">
+
+               <div class="tan-name1">
+                     <div class="check-box1">
+                           <input type="checkbox">
+                     </div>
+ 
+                     <div class="tan-img1">
+                           <img class="tani-img1" src="../images/EMMMM.svg" alt="img">
+                     </div>
+ 
+                    <div class="tanner-mail1">
+                          <p class="tann1">Emeto  Winner</p>
+                          <p class="maill1">Emetowinner@gmail.com</p>
+                    </div>
+               </div>
+ 
+                <div class="tanner-id1">
+                     <div class="text1">
+                         <p class="tan-id1" >#23454GH6J7YT6</p>
+                     </div>
+                </div>
+ 
+                <div class="tanprod-id1">
+                     <p class="tanprod1">Product Designer</p>
+                     
+                     <p class="full1">Contract</p>
+                </div>
+ 
+                <div class="dot-active1">
+                     <div class="do-act1">
+                        <img class="dot1" src="../images/Dot.svg" alt="img">
+                        <p class="act1">Active</p> 
+                     </div>
+                </div>
+ 
+                <div class="mark-desgn1">
+                     <div class="market1" >
+                          <p class="mark1">Product</p>
+                     </div>
+ 
+                     <div class="design1">
+                          <p class="de">Design</p>
+                     </div>
+ 
+                     <div class="one1">
+                          <p class="on1">+1</p>
+                     </div>
+ 
+ 
+                     <div class="threee-dots">
+                          <img class="tani-img4" src="../images/Invincibles.svg" alt="img">
+                     
+                     </div>    
+               </div>
+         </div>
+
+          <!-- third line -->
+
+          <div class="tanner-wrapper1">
+
+               <div class="tan-name1">
+                     <div class="check-box1">
+                           <input type="checkbox">
+                     </div>
+ 
+                     <div class="tan-img1">
+                           <img class="tani-img1" src="../images/TASSSY IMAGE.svg" alt="img">
+                     </div>
+ 
+                    <div class="tanner-mail1">
+                          <p class="tann1">Tassy Omah</p>
+                          <p class="maill1">Tassyomah@gmail.com</p>
+                    </div>
+               </div>
+ 
+ 
+ 
+                <div class="tanner-id1">
+                     <div class="text1">
+                         <p class="tan-id1" >#23454GH6J7YT6</p>
+                     </div>
+                </div>
+ 
+                <div class="tanprod-id1">
+                     <p class="tanprod1">Product Designer</p>
+                     
+                     <p class="full1">Associate</p>
+                </div>
+ 
+                <div class="dot-active2">
+                     <div class="do-act2">
+                        <img class="dot4" src="../images/RED DOT.svg" alt="img">
+                        <p class="act3">Active</p> 
+                     </div>
+                </div>
+ 
+                <div class="mark-desgn1">
+                     <div class="market1" >
+                          <p class="mark1">Product</p>
+                     </div>
+ 
+ 
+                     <div class="threee-dots">
+                          <img class="tani-img6" src="../images/Invincibles.svg" alt="img">
+                     
+                     </div>    
+                </div>
+          </div>
+
+           <!-- fourth line -->
+
+          <div class="tanner-wrapper1">
+
+               <div class="tan-name1">
+                     <div class="check-box1">
+                           <input type="checkbox">
+                     </div>
+ 
+                     <div class="tan-img1">
+                           <img class="tani-img1" src="../images/JM IMAGE.svg" alt="img">
+                     </div>
+ 
+                    <div class="tanner-mail1">
+                          <p class="tann1">James Muriel</p>
+                          <p class="maill1">JamesMuriel@Aerten.finance</p>
+                    </div>
+               </div>
+ 
+ 
+ 
+               <div class="tanner-id1">
+                     <div class="text1">
+                         <p class="tan-id1" >#23454GH6J7YT6</p>
+                     </div>
+                </div>
+ 
+                <div class="tanprod-id1">
+                     <p class="tanprod1">Product Designer</p>
+                     
+                     <p class="full1">Full time</p>
+                </div>
+ 
+                <div class="dot-active4">
+                     <div class="do-act2">
+                        <img class="dot2" src="../images/RED DOT.svg" alt="img">
+                        <p class="act2">Active</p> 
+                     </div>
+                </div>
+ 
+                <div class="mark-desgn2">
+                     <div class="market2" >
+                          <p class="mark2">Engineering</p>
+                     </div>
+ 
+                     <div class="design2">
+                          <p class="des">Design</p>
+                     </div>
+
+ 
+                     <div class="threee-dots">
+                          <img class="tani-img9" src="../images/Invincibles.svg" alt="img">
+                     
+                     </div>    
+                </div>
+           </div>
+
+          <!-- fiveth-line -->
+          <div class="tanner-wrapper1">
+
+               <div class="tan-name1">
+                     <div class="check-box1">
+                           <input type="checkbox">
+                     </div>
+ 
+                     <div class="tan-img1">
+                           <img class="tani-img1" src="../images/EWWW.svg" alt="img">
+                     </div>
+ 
+                    <div class="tanner-mail1">
+                          <p class="tann1">Emeto  Winner</p>
+                          <p class="maill1">Emetowinner@gmail.com</p>
+                    </div>
+               </div>
+ 
+ 
+ 
+                <div class="tanner-id1">
+                     <div class="text1">
+                         <p class="tan-id1" >#23454GH6J7YT6</p>
+                     </div>
+                </div>
+ 
+                <div class="tanprod-id1">
+                     <p class="tanprod1">Frontend Engineer</p>
+                     
+                     <p class="full1">Full time</p>
+                </div>
+ 
+                <div class="dot-active2">
+                     <div class="do-act2">
+                        <img class="dot2" src="../images/RED DOT.svg" alt="img">
+                        <p class="act2">Active</p> 
+                     </div>
+                </div>
+ 
+                <div class="mark-desgn1">
+                     <div class="market1" >
+                          <p class="mark1">Marketing</p>
+                     </div>
+ 
+                     <div class="design1">
+                          <p class="de">Design</p>
+                     </div>
+ 
+                     <div class="one1">
+                          <p class="on1">+3</p>
+                     </div>
+ 
+ 
+                     <div class="threee-dots">
+                          <img class="tani-img4" src="../images/Invincibles.svg" alt="img">
+                     
+                     </div>    
+                </div>
+           </div>
+
+           <!-- sixth line -->
+          
+          <div class="tanner-wrapper1">
+
+               <div class="tan-name1">
+                     <div class="check-box1">
+                           <input type="checkbox">
+                     </div>
+ 
+                     <div class="tan-img1">
+                           <img class="tani-img1" src="../images/TTTOOO.svg" alt="img">
+                     </div>
+ 
+                    <div class="tanner-mail1">
+                          <p class="tann1">Tassy Omah</p>
+                          <p class="maill1">Tassyomah@gmail.com</p>
+                    </div>
+               </div>
+ 
+                <div class="tanner-id1">
+                     <div class="text1">
+                         <p class="tan-id1" >#23454GH6J7YT6</p>
+                     </div>
+                </div>
+ 
+                <div class="tanprod-id1">
+                     <p class="tanprod1">Backend Engineer</p>
+                     
+                     <p class="full1">Part time</p>
+                </div>
+ 
+                <div class="dot-active1">
+                     <div class="do-act1">
+                        <img class="dot1" src="../images/Dot.svg" alt="img">
+                        <p class="act1">Active</p> 
+                     </div>
+                </div>
+ 
+                <div class="mark-desgn1">
+                     <div class="market1" >
+                          <p class="mark1">Engineering</p>
+                     </div>
+ 
+                     <div class="design1">
+                          <p class="de">Design</p>
+                     </div>
+ 
+ 
+                     <div class="threee-dots">
+                          <img class="tani-img8" src="../images/Invincibles.svg" alt="img">
+                     
+                     </div>    
+                </div>
+          </div>
+
+          <!-- seventh-line -->
+
+          <div class="tanner-wrapper1">
+
+               <div class="tan-name1">
+                     <div class="check-box1">
+                           <input type="checkbox">
+                     </div>
+ 
+                     <div class="tan-img1">
+                           <img class="tani-img1" src="../images/JM IMAGE.svg" alt="img">
+                     </div>
+ 
+                    <div class="tanner-mail1">
+                          <p class="tann1">James Muriel</p>
+                          <p class="maill1">JamesMuriel@Aerten.finance</p>
+                    </div>
+               </div>
+ 
+ 
+ 
+                <div class="tanner-id1">
+                     <div class="text1">
+                         <p class="tan-id1" >#23454GH6J7YT6</p>
+                     </div>
+                </div>
+ 
+                <div class="tanprod-id1">
+                     <p class="tanprod1">Backend Engineer</p>
+                     
+                     <p class="full1">Part time</p>
+                </div>
+ 
+                <div class="dot-active1">
+                     <div class="do-act1">
+                        <img class="dot1" src="../images/Dot.svg" alt="img">
+                        <p class="act1">Active</p> 
+                     </div>
+                </div>
+ 
+                <div class="mark-desgn1">
+                     <div class="market1" >
+                          <p class="mark1">Product</p>
+                     </div>
+ 
+                     <div class="design1">
+                          <p class="de">Design</p>
+                     </div>
+ 
+                     <div class="one1">
+                          <p class="on1">+6</p>
+                     </div>
+ 
+ 
+                     <div class="threee-dots">
+                          <img class="tani-img4" src="../images/Invincibles.svg" alt="img">
+                     
+                     </div>    
+                </div>
+           </div>
+
+           <!-- eighth-line -->
+
+           <div class="tanner-wrapper1">
+
+               <div class="tan-name1">
+                     <div class="check-box1">
+                           <input type="checkbox">
+                     </div>
+ 
+                     <div class="tan-img1">
+                           <img class="tani-img1" src="../images/EWWW.svg" alt="img">
+                     </div>
+ 
+                    <div class="tanner-mail1">
+                          <p class="tann1">Emeto  Winner</p>
+                          <p class="maill1">Emetowinner@gmail.com</p>
+                    </div>
+               </div>
+ 
+ 
+ 
+                <div class="tanner-id1">
+                     <div class="text1">
+                         <p class="tan-id1" >#23454GH6J7YT6</p>
+                     </div>
+                </div>
+ 
+                <div class="tanprod-id1">
+                     <p class="tanprod1">Sales specialist</p>
+                     
+                     <p class="full1">Part time</p>
+                </div>
+ 
+                <div class="dot-active1">
+                     <div class="do-act1">
+                        <img class="dot1" src="../images/Dot.svg" alt="img">
+                        <p class="act1">Active</p> 
+                     </div>
+                </div>
+ 
+                <div class="mark-desgn1">
+                     <div class="market1" >
+                          <p class="mark1">Marketing</p>
+                     </div>
+ 
+                     <div class="design1">
+                          <p class="de">Design</p>
+                     </div>
+ 
+                     <div class="one1">
+                          <p class="on1">+4</p>
+                     </div>
+ 
+ 
+                     <div class="threee-dots">
+                          <img class="tani-img4" src="../images/Invincibles.svg" alt="img">
+                     
+                    </div>    
+               </div>
+          </div>
+
+          <div class="previouss">
+               <div class="arrow-pree">
+                    <img  src="../images/arrow-left.svg" alt="img">
+                    <p class="pree">Previous</p>
+               </div>
+
+               <div class="one-tenn">
+                    <div class="one-1">
+                         <p>1</p>
+                    </div>
+
+                    <div class="two-2">
+                         <p>2</p>
+                    </div>
+
+                    <div class="two-3">
+                         <p>3</p>
+                    </div>
+
+                    <div class="dots-3">
+                         <img class="tani-img1" src="../images/horizontal-dots.svg" alt="img">  
+                    </div>
+
+                    <div class="two-3">
+                         <p>8</p>
+                    </div>
+
+                    <div class="two-3">
+                         <p>9</p>
+                    </div>
+
+                    <div class="two-3">
+                         <p>10</p>
+                    </div>
+               </div>
+                    <div class="arrow-postt">
+                         <!-- <img class="tani-img11" src="../images/arrow-left.svg" alt="img"> -->
+                         <p>Next</p>
+                         <img class="tani-img11" src="../images/Nexttt Icon.svg" alt="img">
+                    </div>
+
+          </div>
+     </div> 
+
+<!-- CONTENT FOR ROLES -->
+
+     <div id="roles-content" style="display: none;">
+
+
+          <div id="employees-content">
+        
+               <div class="search-section">
+                     <div class="sec1">
+                         
+                         <div class="imgg-searchh1">
+                  
+                              <div class="imgggg1">
+                                    <img class="img-112" src="../images/Search.svg" alt="img">    
+                              </div>
+                              
+                              <div class="searchh1">
+                                   <textarea rows="3" placeholder=" Search anything here"></textarea>
+                              </div>
+               
+                         </div>
+
+                     </div>
+                
+                     <div class="sec2">
+                           <img src="../images/settings-search.png" alt="logo" style="padding-left: 400px;">
+                           <img src="../images/bell-search icon.png" alt="logo">
+                           <img src="../images/active profile pics.png" alt="logo">
+                     </div>
+                </div> 
+ 
+                <div class="line3"></div>
+           
+               <div class="employee-section">
+                    <div class="employee-sec2">
+                          <h2 class="employy">Roles</h2>
+                          <img src="../images/Help icon.svg" alt="logo">
+
+                          <div class="one-two">
+                              <h4 class="one-three">123</h4 >
+                          </div>
+
+                     </div>
+                     
+                        
+                   
+                    <div class="employee-sec2">
+                        <img src="../images/NEW EXPORT.svg" alt="logo" style="padding-left: 500px;">
+                        <p>Assign</p>
+                     </div>
+                    
+ 
+                    <div class="employee-sec3" >
+                         <img src="../images/NEW EXPORT.svg" alt="logo">
+                        <h3>New Roles</h3>
+                    </div>
+              </div>
+           
+             <div class="all-employeee">
+                <p class="all">All Roles</p>
+                <p class="team">Permissions</p>
+             </div>
+ 
+             <div class="line"></div> <br><br><br>
+ 
+               <div class="search-general2">
+                    <div class="search-by-name2">
+                         <div class="imgg-searchh">
+                  
+                              <div class="imgggg">
+                                    <img class="img-11" src="../images/Search.svg" alt="img">    
+                              </div>
+                              
+                              <div class="searchh">
+                                   <textarea rows="3" placeholder=" Search Employee by name, role, ID or any related keywords"></textarea>
+                              </div>
+               
+                         </div> 
+                         
+                         <div class="threeof-them">
+                          <div class="filt-img">
+                                <img class="fil-img" src="../images/Filters lines.svg" alt="img" >
+                                <p class="filter">Filter</p style="padding-left: 200px;">
+                          </div>
+ 
+                          <div class="three-line">
+                               <img class="thre" src="../images/three-lines.svg" alt="img">
+                          </div>
+ 
+                          <div class="boxs">
+                            <img class="thre" src="../images/four-boxs.svg" alt="img">
+                         </div>
+
+                         </div>
+                     </div>
+           
+               </div>
+          </div>
+
+          <div class="all-headings">
+
+               <div class="all">
+                    <p class="alll">All</p>
+               </div>
+          
+               
+               <div class="prod">
+                    <p>Product</p>
+               </div>
+               
+               <div class="engine">
+                    <p>Engineering</p>   
+               </div>
+
+               <div class="markett">
+                    <p>Marketing</p>
+               </div>
+               
+               <div class="recruit">
+                    <p>Recruitment</p>
+               </div>
+                 
+               <div class="sale">
+                    <p>Sales</p>
+               </div>
+               <div class="custom">
+                    <p>Customer service</p>
+               </div>
+          </div>
+
+          <div class="second-line"></div>
+
+          <div class="container-sol-sales-special1">
+               
+               <div class="first-box">
+                    
+                    <div class="sss-images">
+                         
+                         <div class="sss">
+                              <p class="sss1">Solution</p>
+                              <p class="sss2" >Sales</p>
+                              <p class="sss3">Specialist</p>
+                         </div>
+
+                         <div class="the-images">
+                              <img class="image-1" src="../images/Row1image1.svg" alt="img">
+                              <img class="image-2" src="../images/row1image2.svg" alt="img">
+                              <img class="image-3" src="../images/row1image3.svg" alt="img">
+                              <img class="image-4" src="../images/row1image4.svg" alt="img">
+                              <img class="image-5" src="../images/row1image5.svg" alt="img">
+                              <img class="image-6" src="../images/row1image6.svg" alt="img"> 
+                              <img class="img-9" src="../images/_Avatar add button.svg" alt="img">
+                         </div>
+                         
+                    </div>
+
+                    <div class="res-mped">
+                         <div class="res">
+                              <p>Responsible for driving revenue growth by identifying and pursuing new <br> business opportunities, as well as
+                               maintaining relationships with existing <br> clients. working closely with customers to understand their 
+                               needs and <br> provide solutions that meet or exceed their expectations, while also <br>achieving the company's
+                              sales goals.</p>
+                         </div>
+
+                         <div class="mped">
+                              <div class="mar">
+                                   <div class="mar1">
+                                        <p>Marketing</p>
+                                   </div>
+
+                                   <div class="mar2">
+                                        <p>Product</p>   
+                                   </div>
+                                        
+                                   <div class="mar3">
+                                        <p>Engineering</p>
+                                   </div>
+                                   
+                                   <div class="mar4">
+                                        <p>Design</p>
+                                   </div>
+
+                              </div>
+                         </div>
+                     </div>
+
+                   <div class="picsjames-a">
+                         <div class="james1">
+                                <img class="img-7" src="../images/man-pics.svg" alt="img">  
+                         </div>
+
+                         <div class="jm">
+                              <div class="james">
+                                   <p class="james-c">James campion</p>
+                              </div>
+                               
+                              <div class="mana">
+                                   <p class="man">Manager</p>
+                              </div>
+                              
+                         </div>
+
+                         <div class="arrow">
+                              <img class="img-8" src="../images/arrow-down.svg" alt="img">    
+                          </div>
+                   
+                    </div>
+
+               </div>
+
+              <!-- second box -->
+
+               <div class="second-box">
+                    
+                    <div class="sss-images">
+                         
+                         <div class="sss">
+                              <p class="sss1">Solution</p>
+                              <p class="sss2" >Sales</p>
+                              <p class="sss3">Specialist</p>
+                         </div>
+
+                         <div class="the-images">
+                              <img class="image-1" src="../images/Row1image1.svg" alt="img">
+                              <img class="image-2" src="../images/row1image2.svg" alt="img">
+                              <img class="image-3" src="../images/row1image3.svg" alt="img">
+                              <img class="image-4" src="../images/row1image4.svg" alt="img">
+                              <img class="image-5" src="../images/row1image5.svg" alt="img">
+                              <img class="image-6" src="../images/row1image6.svg" alt="img">
+                              <img class="img-9" src="../images/_Avatar add button.svg" alt="img">
+                         </div>    
+                    </div>
+
+                    <div class="res-mped">
+                         <div class="res">
+                              <p>Responsible for driving revenue growth by identifying and pursuing new <br> business opportunities, as well as
+                               maintaining relationships with existing <br> clients. working closely with customers to understand their 
+                               needs and <br> provide solutions that meet or exceed their expectations, while also <br>achieving the company's
+                              sales goals.</p>
+                         </div>
+
+                         <div class="mped">
+                              <div class="mar">
+                                   <div class="mar1">
+                                        <p>Marketing</p>
+                                   </div>
+
+                                   <div class="mar2">
+                                        <p>Product</p>   
+                                   </div>
+                                        
+                                   <div class="mar3">
+                                        <p>Engineering</p>
+                                   </div>
+                                   
+                                   <div class="mar4">
+                                        <p>Design</p>
+                                   </div>
+
+                              </div>
+                         </div>
+                     </div>
+
+                   <div class="picsjames-a">
+                         <div class="james1">
+                                <img class="img-7" src="../images/man-pics.svg" alt="img">  
+                         </div>
+
+                         <div class="jm">
+                              <div class="james">
+                                   <p class="james-c">James campion</p>
+                              </div>
+                               
+                              <div class="mana">
+                                   <p class="man">Manager</p>
+                              </div>
+                              
+                         </div>
+
+                         <div class="arrow">
+                              <img class="img-8" src="../images/arrow-down.svg" alt="img">    
+                          </div>
+                   
+                    </div>
+
+               </div>    
+          </div>
+
+          <!-- second group -->
+
+          <div class="container-sol-sales-special1">
+               
+               <div class="third-box">
+                    
+                    <div class="sss-images">
+                         
+                         <div class="sss">
+                              <p class="sss1">Solution</p>
+                              <p class="sss2" >Sales</p>
+                              <p class="sss3">Specialist</p>
+                         </div>
+
+                         <div class="the-images">
+                              <img class="image-1" src="../images/Row1image1.svg" alt="img">
+                              <img class="image-2" src="../images/row1image2.svg" alt="img">
+                              <img class="image-3" src="../images/row1image3.svg" alt="img">
+                              <img class="image-4" src="../images/row1image4.svg" alt="img">
+                              <img class="image-5" src="../images/row1image5.svg" alt="img">
+                              <img class="image-6" src="../images/row1image6.svg" alt="img">
+                              <img class="img-9" src="../images/_Avatar add button.svg" alt="img"> 
+                         </div>
+
+                         
+                    </div>
+
+                    <div class="res-mped">
+                         <div class="res">
+                              <p>Responsible for driving revenue growth by identifying and pursuing new <br> business opportunities, as well as
+                               maintaining relationships with existing <br> clients. working closely with customers to understand their 
+                               needs and <br> provide solutions that meet or exceed their expectations, while also <br>achieving the company's
+                              sales goals.</p>
+                         </div>
+
+                         <div class="mped">
+                              <div class="mar">
+                                   <div class="mar1">
+                                        <p>Marketing</p>
+                                   </div>
+
+                                   <div class="mar2">
+                                        <p>Product</p>   
+                                   </div>
+                                        
+                                   <div class="mar3">
+                                        <p>Engineering</p>
+                                   </div>
+                                   
+                                   <div class="mar4">
+                                        <p>Design</p>
+                                   </div>
+
+                              </div>
+                         </div>
+                     </div>
+
+                   <div class="picsjames-a">
+                         <div class="james1">
+                                <img class="img-7" src="../images/man-pics.svg" alt="img">  
+                         </div>
+
+                         <div class="jm">
+                              <div class="james">
+                                   <p class="james-c">James campion</p>
+                              </div>
+                               
+                              <div class="mana">
+                                   <p class="man">Manager</p>
+                              </div>
+                              
+                         </div>
+
+                         <div class="arrow">
+                              <img class="img-8" src="../images/arrow-down.svg" alt="img">    
+                          </div>
+                   
+                    </div>
+
+               </div>
+
+              <!-- second box -->
+
+               <div class="fourth-box">
+                    
+                    <div class="sss-images">
+                         
+                         <div class="sss">
+                              <p class="sss1">Solution</p>
+                              <p class="sss2" >Sales</p>
+                              <p class="sss3">Specialist</p>
+                         </div>
+
+                         <div class="the-images">
+                              <img class="image-1" src="../images/Row1image1.svg" alt="img">
+                              <img class="image-2" src="../images/row1image2.svg" alt="img">
+                              <img class="image-3" src="../images/row1image3.svg" alt="img">
+                              <img class="image-4" src="../images/row1image4.svg" alt="img">
+                              <img class="image-5" src="../images/row1image5.svg" alt="img">
+                              <img class="image-6" src="../images/row1image6.svg" alt="img">
+                              <img class="img-9" src="../images/_Avatar add button.svg" alt="img">
+                         </div>    
+                    </div>
+
+                    <div class="res-mped">
+                         <div class="res">
+                              <p>Responsible for driving revenue growth by identifying and pursuing new <br> business opportunities, as well as
+                               maintaining relationships with existing <br> clients. working closely with customers to understand their 
+                               needs and <br> provide solutions that meet or exceed their expectations, while also <br>achieving the company's
+                              sales goals.</p>
+                         </div>
+
+                         <div class="mped">
+                              <div class="mar">
+                                   <div class="mar1">
+                                        <p>Marketing</p>
+                                   </div>
+
+                                   <div class="mar2">
+                                        <p>Product</p>   
+                                   </div>
+                                        
+                                   <div class="mar3">
+                                        <p>Engineering</p>
+                                   </div>
+                                   
+                                   <div class="mar4">
+                                        <p>Design</p>
+                                   </div>
+
+                              </div>
+                         </div>
+                     </div>
+
+                   <div class="picsjames-a">
+                         <div class="james1">
+                                <img class="img-7" src="../images/man-pics.svg" alt="img">  
+                         </div>
+
+                         <div class="jm">
+                              <div class="james">
+                                   <p class="james-c">James campion</p>
+                              </div>
+                               
+                              <div class="mana">
+                                   <p class="man">Manager</p>
+                              </div>
+                              
+                         </div>
+
+                         <div class="arrow">
+                              <img class="img-8" src="../images/arrow-down.svg" alt="img">    
+                          </div>
+                   
+                    </div>
+
+               </div>    
+          </div>
+     </div>
+</div>
+
+<script src="../js/script.js"></script>    
+</body>
+</html>
